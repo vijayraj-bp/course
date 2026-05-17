@@ -1,3 +1,8 @@
+{{
+  config(
+    event_time='review_date'
+  )
+}}
 WITH src_reviews AS (
 SELECT * FROM {{source('airbnb', 'reviews')}}
 )
